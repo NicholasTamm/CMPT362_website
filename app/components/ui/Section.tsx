@@ -9,7 +9,7 @@ export default function Section({ id, title, children, className = "" }: Section
   return (
     <section id={id} className={`min-h-screen py-20 px-6 md:px-12 ${className}`}>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-black">
           {title}
         </h2>
         {children}

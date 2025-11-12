@@ -1,6 +1,34 @@
+"use client";
+
+import { useEffect, useState } from 'react';
 import { Section, Button } from '../ui';
 
 export default function PitchSection() {
+  const heroHighlightText = 'MovieFinder';
+  const [typedText, setTypedText] = useState('');
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      index += 1;
+      setTypedText(heroHighlightText.slice(0, index));
+      if (index >= heroHighlightText.length) {
+        clearInterval(typingInterval);
+      }
+    }, 120);
+
+    return () => clearInterval(typingInterval);
+  }, [heroHighlightText]);
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setCursorVisible((visible) => !visible);
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
+
   const features = [
     {
       icon: '🎬',
@@ -29,7 +57,22 @@ export default function PitchSection() {
       {/* Hero Area */}
       <div className="text-center max-w-4xl mx-auto mb-20">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-          Welcome to <span className="text-blue-600">MovieFinder</span>
+          Welcome to{' '}
+          <span className="text-blue-600">
+            <span
+              aria-hidden="true"
+              className="inline-flex items-center"
+              style={{ minWidth: `${heroHighlightText.length}ch` }}
+            >
+              <span>{typedText}</span>
+              <span
+                className={`ml-1 inline-block text-blue-600 transition-opacity duration-200 ${cursorVisible ? 'opacity-100' : 'opacity-0'}`}
+              >
+                _
+              </span>
+            </span>
+            <span className="sr-only">{heroHighlightText}</span>
+          </span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8">
           Your ultimate companion for discovering and tracking movies
