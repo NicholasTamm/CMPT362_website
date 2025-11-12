@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { NavLink } from './ui';
 
 const navItems = [
-  { label: 'Pitch', href: '#pitch' },
+  { label: 'Home', href: '#pitch' },
   { label: 'Team', href: '#team' },
   { label: 'Download', href: '#apk' },
   { label: 'UI Gallery', href: '#ui' },
