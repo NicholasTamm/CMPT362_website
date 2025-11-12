@@ -42,7 +42,7 @@ export default function TeamMemberCard({
         <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
         <p className="text-blue-600 font-semibold mb-3">{role}</p>
         {bio && (
-          <p className="text-gray-600 text-sm mb-4">{bio}</p>
+          <p className="text-gray-600 text-sm mb-4 whitespace-pre-line">{bio}</p>
         )}
 
         {/* Social Links */}

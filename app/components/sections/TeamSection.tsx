@@ -4,38 +4,38 @@ export default function TeamSection() {
   const teamMembers = [
     {
       name: 'Raman Kumar',
-      role: 'Lead Developer',
-      bio: 'Full-stack developer passionate about creating seamless mobile experiences.',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      role: 'Developer',
+      bio: 'Kotlin Development \n Database Design \n Architecture',
+      github: 'https://github.com/Gherra',
+      linkedin: ''
     },
     {
       name: 'Nicholas Tam',
-      role: 'UI/UX Designer',
-      bio: 'Designing intuitive and beautiful interfaces that users love.',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      role: 'Developer',
+      bio: 'Video Editing \n Website \n MVVM design \n ',
+      github: 'https://github.com/NicholasTamm',
+      linkedin: 'https://www.linkedin.com/in/nicholas-tam-82a9aa295/'
     },
     {
       name: 'Amar',
-      role: 'Backend Engineer',
-      bio: 'Building robust APIs and scalable backend systems.',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      role: 'Developer',
+      bio: 'UI Mockup \n Kotlin Development',
+      github: 'https://github.com/Amar710',
+      linkedin: 'https://www.linkedin.com/in/amardeep-sangha-15a5aa265/'
     },
     {
       name: 'Junior',
-      role: 'Product Manager',
-      bio: 'Bringing ideas to life and ensuring the best user experience.',
+      role: 'Developer',
+      bio: 'UI mockup \n Kotlin Development',
       github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      linkedin: ''
     },
         {
       name: 'Matthew L',
-      role: 'Backend Developer',
-      bio: 'Designing scalable backend systems and APIs.',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com'
+      role: 'Developer',
+      bio: 'Backend \n Website \n MVVM design',
+      github: 'https://github.com/matthew8573',
+      linkedin: 'https://www.linkedin.com/in/matthew-liu-86b059337/'
     }
   ];
 
@@ -43,30 +43,30 @@ export default function TeamSection() {
     <Section id="team" title="Meet the Team" className="bg-white">
       <div className="text-center mb-12">
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Our talented team of developers and designers working together to bring you the best movie discovery experience.
+          Our talented team of developers working together to bring you the best movie discovery experience.
         </p>
       </div>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {teamMembers.map((member, index) => (
-          <TeamMemberCard
-            key={index}
-            name={member.name}
-            role={member.role}
-            bio={member.bio}
-            github={member.github}
-            linkedin={member.linkedin}
-          />
-        ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        {teamMembers.map((member, index) => {
+          const github = member.github?.trim();
+          const linkedin = member.linkedin?.trim();
+
+          return (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              bio={member.bio}
+              github={github || undefined}
+              linkedin={linkedin || undefined}
+            />
+          );
+        })}
       </div>
 
-      {/* Call to Action */}
-      <div className="mt-16 text-center">
-        <p className="text-gray-600 italic">
-          Want to join our team? We're always looking for talented individuals!
-        </p>
-      </div>
+
     </Section>
   );
 }
