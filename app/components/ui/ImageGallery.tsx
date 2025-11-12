@@ -25,8 +25,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Main Image Display */}
-      <div className="relative mb-8">
-        <div className="relative aspect-[9/16] max-h-[600px] mx-auto bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative mb-6">
+        <div className="relative aspect-[9/16] max-h-[500px] mx-auto bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={images[selectedImage].src}
             alt={images[selectedImage].alt}
@@ -62,7 +62,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
         {/* Image Title */}
         {images[selectedImage].title && (
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full text-sm">
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/70 text-white px-3 py-1.5 rounded-full text-xs md:text-sm">
             {images[selectedImage].title}
           </div>
         )}
@@ -70,7 +70,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
       {/* Thumbnail Gallery */}
       {images.length > 1 && (
-        <div className="flex justify-center gap-4 overflow-x-auto pb-4">
+        <div className="flex justify-center gap-3 overflow-x-auto pb-3">
           {images.map((image, index) => (
             <button
               key={index}
@@ -94,7 +94,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
       {/* Image Counter */}
       {images.length > 1 && (
-        <div className="text-center mt-4 text-gray-600">
+        <div className="text-center mt-3 text-sm text-gray-600">
           {selectedImage + 1} / {images.length}
         </div>
       )}
