@@ -5,3 +5,5 @@ export { default as NavLink } from './NavLink';
 export { default as TeamMemberCard } from './TeamMemberCard';
 export { default as ImageGallery } from './ImageGallery';
 export { default as VideoPlayer } from './VideoPlayer';
+export { default as YouTubePlayer } from './YouTubePlayer';
+export { default as YouTubePlayerCycle } from './YouTubePlayerCycle';

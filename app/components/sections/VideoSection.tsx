@@ -1,20 +1,33 @@
-import { Section, VideoPlayer } from '../ui';
+import { Section, YouTubePlayerCycle } from '../ui';
 
 export default function VideoSection() {
+  // Define YouTube video IDs 
+  const videos = [
+    {
+      videoId: 'uNirabmypYI',
+      title: 'MovieFinder Project Show and Tell 1'
+    },
+    {
+      videoId: '3eeddl-oUHw',
+      title: 'MovieFinder Project Show and Tell 2'
+    }
+  ];
+
   return (
     <Section id="video" title="See It in Action" className="bg-linear-to-b from-blue-50 to-white">
       {/* Introduction */}
       <div className="text-center mb-12">
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Watch our comprehensive demo to see MovieFinder in action. Discover how easy it is to find,
+          Watch our comprehensive demo to see MovieFinder in action. Discover a new way to find,
           track, and explore movies with our intuitive mobile app.
         </p>
       </div>
 
       {/* Video Player */}
-      <VideoPlayer
-        src="/assets/videos/CMPT 362 Group 3 show and tell 1.mp4"
-        title="MovieFinder App Demo"
+      <YouTubePlayerCycle 
+        videos={videos}
+        autoCycle={false} 
+        cycleInterval={10000} 
       />
 
       {/* Key Highlights */}
@@ -29,7 +42,7 @@ export default function VideoSection() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Search & Discovery</h4>
                 <p className="text-gray-600 text-sm">
-                  See how easy it is to search for movies and discover new favorites
+                  A new intuitive and easy way to search for movies and discover new favorites
                 </p>
               </div>
             </div>
@@ -51,7 +64,7 @@ export default function VideoSection() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Detailed Information</h4>
                 <p className="text-gray-600 text-sm">
-                  Access comprehensive movie details, ratings, and cast information
+                  Access comprehensive movie details, ratings, and trailers 
                 </p>
               </div>
             </div>
@@ -60,9 +73,9 @@ export default function VideoSection() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">🎲</div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Shuffle Feature</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">For You Feature</h4>
                 <p className="text-gray-600 text-sm">
-                  Let the app surprise you with random movie suggestions
+                  Customized movie suggestions based on your swipe history
                 </p>
               </div>
             </div>

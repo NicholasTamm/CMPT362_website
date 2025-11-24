@@ -27,8 +27,8 @@ export default function TeamSection() {
       name: 'Junior',
       role: 'Developer',
       bio: 'UI mockup \n Kotlin Development',
-      github: 'https://github.com',
-      linkedin: ''
+      github: 'https://github.com/Junior-Ca',
+      linkedin: 'https://www.linkedin.com/in/luisito-camacho-9228412b0/'
     },
         {
       name: 'Matthew L',
