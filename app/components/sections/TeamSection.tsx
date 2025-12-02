@@ -12,28 +12,28 @@ export default function TeamSection() {
     {
       name: 'Nicholas Tam',
       role: 'Developer',
-      bio: 'Video Editing \n Website \n MVVM design \n ',
+      bio: 'Video Editing \n Website \n MVVM design \n Database Integration ',
       github: 'https://github.com/NicholasTamm',
       linkedin: 'https://www.linkedin.com/in/nicholas-tam-82a9aa295/'
     },
     {
       name: 'Amardeep Sangha',
       role: 'Developer',
-      bio: 'UI Mockup \n Kotlin Development',
+      bio: 'UI Mockup \n Kotlin Development \n App Logo Design' ,
       github: 'https://github.com/Amar710',
       linkedin: 'https://www.linkedin.com/in/amardeep-sangha-15a5aa265/'
     },
     {
       name: 'Luisito Camacho',
       role: 'Developer',
-      bio: 'UI mockup \n Kotlin Development',
+      bio: 'UI mockup \n Kotlin Development \n Bug Fixes',
       github: 'https://github.com/Junior-Ca',
       linkedin: 'https://www.linkedin.com/in/luisito-camacho-9228412b0/'
     },
         {
       name: 'Matthew L',
       role: 'Developer',
-      bio: 'Backend \n Website \n MVVM design',
+      bio: 'Backend \n Website \n MVVM design \n Natural Language Processing',
       github: 'https://github.com/matthew8573',
       linkedin: 'https://www.linkedin.com/in/matthew-liu-86b059337/'
     }
