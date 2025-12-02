@@ -3,19 +3,24 @@ import { Section, ImageGallery } from '../ui';
 export default function UiSection() {
   const screenshots = [
     {
-      src: '/assets/screenshots/MovieFinderImage1.jpg',
+      src: '/assets/screenshots/MovieFinderExplorePage.png',
       alt: 'MovieFinder Home Screen',
       title: 'Home Screen'
     },
     {
-      src: '/assets/screenshots/MovieFinderExplorePage.jpg',
-      alt: 'MovieFinder Explore Page',
-      title: 'Explore Movies'
+      src: '/assets/screenshots/MovieFinderSearchPage.png',
+      alt: 'MovieFinder Search Page',
+      title: 'Search For Movies'
     },
     {
-      src: '/assets/screenshots/MovieFinderShuffle.jpg',
-      alt: 'MovieFinder Shuffle Feature',
-      title: 'Shuffle & Discover'
+      src: '/assets/screenshots/MovieFinderMovieDetails.png',
+      alt: 'MovieFinder Movie Details',
+      title: 'Movie Details'
+    },
+    {
+      src: '/assets/screenshots/MovieFinderSwipe.png',
+      alt: 'MovieFinder Swipe Feature',
+      title: 'Swipe & Discover'
     }
   ];
 
