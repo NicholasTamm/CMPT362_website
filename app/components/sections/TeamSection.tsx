@@ -17,14 +17,14 @@ export default function TeamSection() {
       linkedin: 'https://www.linkedin.com/in/nicholas-tam-82a9aa295/'
     },
     {
-      name: 'Amar',
+      name: 'Amardeep Sangha',
       role: 'Developer',
       bio: 'UI Mockup \n Kotlin Development',
       github: 'https://github.com/Amar710',
       linkedin: 'https://www.linkedin.com/in/amardeep-sangha-15a5aa265/'
     },
     {
-      name: 'Junior',
+      name: 'Luisito Camacho',
       role: 'Developer',
       bio: 'UI mockup \n Kotlin Development',
       github: 'https://github.com/Junior-Ca',
