@@ -92,7 +92,7 @@ Voiceover, Recording, and Presentation slides:
       linkedin: 'https://www.linkedin.com/in/luisito-camacho-9228412b0/'
     },
     {
-      name: 'Matthew L',
+      name: 'Matthew Liu',
       role: 'Developer',
       bio: 'Infinite Video Scrolling \n Website Development \n Video Player \n NLP Searching Capabilities',
       contributions: `Kotlin Development:

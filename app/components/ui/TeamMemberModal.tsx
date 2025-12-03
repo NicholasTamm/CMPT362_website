@@ -120,6 +120,14 @@ export default function TeamMemberModal({
             )}
           </div>
 
+          {/* Bio Section */}
+          {bio && (
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Team Contribution</h3>
+              <p className="text-gray-700 whitespace-pre-line leading-relaxed">{bio}</p>
+            </div>
+          )}
+
           {/* Contributions Section */}
           {contributions && (
             <div className="bg-blue-50 rounded-xl p-6">
