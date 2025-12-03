@@ -5,35 +5,35 @@ export default function TeamSection() {
     {
       name: 'Raman Kumar',
       role: 'Developer',
-      bio: 'Kotlin Development \n Database Design \n Architecture',
+      bio: 'Early Prototyping\n TMDB API Integration \n Architecture and Design \n Youtube Player integration',
       github: 'https://github.com/Gherra',
       linkedin: ''
     },
     {
       name: 'Nicholas Tam',
       role: 'Developer',
-      bio: 'Video Editing \n Website \n MVVM design \n Database Integration ',
+      bio: 'App Presentation \n Video Editing \n Website Development \n Firebase Integration \n Bug Fixes ',
       github: 'https://github.com/NicholasTamm',
       linkedin: 'https://www.linkedin.com/in/nicholas-tam-82a9aa295/'
     },
     {
       name: 'Amardeep Sangha',
       role: 'Developer',
-      bio: 'UI Mockup \n Kotlin Development \n App Logo Design' ,
+      bio: 'UI Mockup \n App Logo Design' ,
       github: 'https://github.com/Amar710',
       linkedin: 'https://www.linkedin.com/in/amardeep-sangha-15a5aa265/'
     },
     {
       name: 'Luisito Camacho',
       role: 'Developer',
-      bio: 'UI mockup \n Kotlin Development \n Bug Fixes',
+      bio: 'UI mockup \n Bug Fixes',
       github: 'https://github.com/Junior-Ca',
       linkedin: 'https://www.linkedin.com/in/luisito-camacho-9228412b0/'
     },
         {
       name: 'Matthew L',
       role: 'Developer',
-      bio: 'Backend \n Website \n MVVM design \n Natural Language Processing',
+      bio: 'Infinite Video Scrolling \n Website Development \n Video Player \n NLP Searching Capabilities',
       github: 'https://github.com/matthew8573',
       linkedin: 'https://www.linkedin.com/in/matthew-liu-86b059337/'
     }
