@@ -10,6 +10,10 @@ export default function VideoSection() {
     {
       videoId: '3eeddl-oUHw',
       title: 'MovieFinder Project Show and Tell 2'
+    },
+    {
+      videoId: 'AXdMC9scPWs',
+      title: 'Final Project Presentation'
     }
   ];
 

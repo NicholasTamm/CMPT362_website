@@ -18,7 +18,7 @@ export default function TeamMemberCard({
   linkedin
 }: TeamMemberCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 h-full flex flex-col">
       {/* Profile Photo */}
       <div className="flex justify-center mb-6">
         <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600">
