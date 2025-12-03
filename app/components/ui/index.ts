@@ -6,3 +6,4 @@ export { default as TeamMemberCard } from './TeamMemberCard';
 export { default as ImageGallery } from './ImageGallery';
 export { default as YouTubePlayer } from './YouTubePlayer';
 export { default as YouTubePlayerCycle } from './YouTubePlayerCycle';
+export { default as TeamMemberModal } from './TeamMemberModal';

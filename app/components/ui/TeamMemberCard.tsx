@@ -7,6 +7,7 @@ interface TeamMemberCardProps {
   bio?: string;
   github?: string;
   linkedin?: string;
+  onClick?: () => void;
 }
 
 export default function TeamMemberCard({
@@ -15,13 +16,17 @@ export default function TeamMemberCard({
   photo,
   bio,
   github,
-  linkedin
+  linkedin,
+  onClick
 }: TeamMemberCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 h-full flex flex-col">
+    <button
+      onClick={onClick}
+      className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 h-full flex flex-col cursor-pointer text-left w-full group"
+    >
       {/* Profile Photo */}
       <div className="flex justify-center mb-6">
-        <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600">
+        <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 group-hover:ring-4 group-hover:ring-blue-300 transition-all">
           {photo ? (
             <Image
               src={photo}
@@ -37,17 +42,24 @@ export default function TeamMemberCard({
         </div>
       </div>
 
-      {/* Member Info */}
-      <div className="text-center">
+      {/* Member Info - Flex grow to push social links to bottom */}
+      <div className="text-center flex flex-col grow">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
         <p className="text-blue-600 font-semibold mb-3">{role}</p>
         {bio && (
-          <p className="text-gray-600 text-sm mb-4 whitespace-pre-line">{bio}</p>
+          <p className="text-gray-600 text-sm mb-4 whitespace-pre-line line-clamp-3">{bio}</p>
         )}
 
-        {/* Social Links */}
+        {/* Click to view more indicator */}
+        <div className="mt-auto pt-4">
+          <span className="text-blue-600 text-sm font-medium group-hover:underline">
+            More Details...
+          </span>
+        </div>
+
+        {/* Social Links - Pinned to bottom with mt-auto */}
         {(github || linkedin) && (
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex justify-center gap-4 mt-4" onClick={(e) => e.stopPropagation()}>
             {github && (
               <a
                 href={github}
@@ -77,6 +89,6 @@ export default function TeamMemberCard({
           </div>
         )}
       </div>
-    </div>
+    </button>
   );
 }
