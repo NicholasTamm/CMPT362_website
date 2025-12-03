@@ -156,6 +156,13 @@ Website Development
           linkedin={teamMembers[selectedMember].linkedin?.trim() || undefined}
         />
       )}
+
+      {/* Additional Information text */}
+      <div className="text-center mt-12">
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Click a team member for project contributions
+        </p>
+      </div>
     </Section>
   );
 }
