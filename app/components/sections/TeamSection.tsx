@@ -10,7 +10,7 @@ export default function TeamSection() {
     {
       name: 'Raman Kumar',
       role: 'Developer',
-      bio: 'Kotlin Development \n Database Design \n Architecture',
+      bio: 'Early Prototyping\n TMDB API Integration \n Architecture and Design \n Youtube Player integration',
       contributions: `Kotlin Development:
                   -  Handled TMDB implementation and integration
 -  Early prototyping
@@ -29,7 +29,7 @@ Design and Architecture
     {
       name: 'Nicholas Tam',
       role: 'Developer',
-      bio: 'Video Editing \n Website \n MVVM design \n Database Integration',
+      bio: 'App Presentation \n Video Editing \n Website Development \n Firebase Integration\n Bug Fixes ',
       contributions: `Kotlin development:
 Bug Fixing and Testing:
 -  UI fixes with movie cards, swipe tab, explore page
@@ -55,7 +55,7 @@ Video editing, Voice over, Presentation slides, Demo showcasing:
     {
       name: 'Amardeep Sangha',
       role: 'Developer',
-      bio: 'UI Mockup \n Kotlin Development \n App Logo Design',
+      bio: 'UI Mockup \n App Logo Design',
       contributions: `Kotlin Development
 -  App loading intro
 Figma design
@@ -73,7 +73,7 @@ Misc:
     {
       name: 'Luisito Camacho',
       role: 'Developer',
-      bio: 'UI mockup \n Kotlin Development \n Bug Fixes',
+      bio: 'UI mockup \n Bug Fixes',
       contributions: `Kotlin Development:
 -  Refactor refresh to display a loading animation on all pages
 Bug fixes:
@@ -94,7 +94,7 @@ Voiceover, Recording, and Presentation slides:
     {
       name: 'Matthew L',
       role: 'Developer',
-      bio: 'Backend \n Website \n MVVM design \n Natural Language Processing',
+      bio: 'Infinite Video Scrolling \n Website Development \n Video Player \n NLP Searching Capabilities',
       contributions: `Kotlin Development:
 -  Brainstorm, Design, Implementation:
 -  Gemini NLP searching implementation
