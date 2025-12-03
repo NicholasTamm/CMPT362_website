@@ -14,10 +14,12 @@ export default function TeamSection() {
       contributions: `Kotlin Development:
                   -  Handled TMDB implementation and integration
 -  Early prototyping
--  Jetpack Compose refactor
+-  Completed Jetpack Compose refactor from XML
 -  Room DB modelling and thread architecture
--  Recommendations algorithm
--  YouTube Player for trailer in Detailed Movie View
+-  YouTubePlayerView implementation and integration
+-  Developed key feature to grab trailers from TMDB API and display implemented TrailerActivity
+-  Implemented Recommendations algorithm
+-  BottomNavigationView implementation
 Video editing, Demo Showcasing:
 -  Pitch 
 -  Show and tell 1
@@ -32,12 +34,8 @@ Design and Architecture
       bio: 'App Presentation \n Video Editing \n Website Development \n Firebase Integration\n Bug Fixes ',
       contributions: `Kotlin development:
 Bug Fixing and Testing:
--  UI fixes with movie cards, swipe tab, explore page
--  Fixed null assignment bug
-Brainstormed technical features to implement:
--  Gemini NLP implementation
--  Playing trailers within the swipe tab
--  Firebase integration
+-  UI fixes with movie cards, swipe tab, explore page, null assignment bug
+-  Architecture and Design for NLP integration, Firebase integration, and Infinite Video Scrolling
 -  Implemented Firebase integration
 -  Search algorithm weighted rating for relevance
 Diagrams:
@@ -56,14 +54,8 @@ Video editing, Voice over, Presentation slides, Demo showcasing:
       name: 'Amardeep Sangha',
       role: 'Developer',
       bio: 'UI Mockup \n App Logo Design',
-      contributions: `Kotlin Development
--  App loading intro
-Figma design
-Diagrams:
--  UI Diagram & Mockup
-Presentation script:
--  Pitch
-Misc:
+      contributions: `
+-  Figma design
 -  App Logo
 -  Organized meetings
 `,
