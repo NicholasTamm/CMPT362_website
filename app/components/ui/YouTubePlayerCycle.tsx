@@ -69,8 +69,8 @@ export default function YouTubePlayerCycle({
                 onClick={() => goToVideo(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
                   index === currentIndex
-                    ? 'bg-blue-600 w-8'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-red-600 w-8'
+                    : 'bg-gray-300 hover:bg-red-100'
                 }`}
                 aria-label={`Go to video ${index + 1}`}
               />
@@ -81,7 +81,7 @@ export default function YouTubePlayerCycle({
           <div className="flex justify-center items-center gap-4">
             <button
               onClick={goToPrevious}
-              className="min-w-[120px] px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105"
+              className="min-w-[120px] px-6 py-2 bg-[var(--component-background)] hover-component-bg text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 border border-gray-700"
               aria-label="Previous video"
             >
               ← Previous
@@ -91,7 +91,7 @@ export default function YouTubePlayerCycle({
             </span>
             <button
               onClick={goToNext}
-              className="min-w-[120px] px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105"
+              className="min-w-[120px] px-6 py-2 bg-[var(--component-background)] hover-component-bg text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 border border-gray-700"
               aria-label="Next video"
             >
               Next →

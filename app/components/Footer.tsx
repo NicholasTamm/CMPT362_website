@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[var(--component-background)] text-white py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
@@ -18,17 +18,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#pitch" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#pitch" className="text-gray-400 hover:text-red-600 transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="#team" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#team" className="text-gray-400 hover:text-red-600 transition-colors">
                   Team
                 </a>
               </li>
               <li>
-                <a href="#apk" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#apk" className="text-gray-400 hover:text-red-600 transition-colors">
                   Download
                 </a>
               </li>
@@ -43,7 +43,7 @@ export default function Footer() {
                 href="https://github.com/Gherra/MovieFinder"
                 target="_blank"
                 rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-gray-400 hover:text-red-600 transition-colors"
                 aria-label="GitHub"
               >
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

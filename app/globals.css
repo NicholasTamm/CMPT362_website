@@ -1,21 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0e0f;
+  --foreground: #ffffff;
+  --secondary: #ff0000;
+  --component-background: #2B2B2B;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
   --font-mono: var(--font-jetbrains);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -23,4 +19,68 @@ body {
   color: var(--foreground);
   font-family: var(--font-jetbrains), SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Ensure hover states work properly */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+/* Force hover states to work - override any conflicting styles */
+button:hover,
+a:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Custom hover class for component background buttons */
+.hover-component-bg:hover {
+  background-color: #374151 !important; /* gray-700 */
+  filter: brightness(1.1);
+}
+
+/* Force hover states to work - these will apply to any element with hover classes */
+[class*="hover:bg-red-700"]:hover {
+  background-color: #b91c1c !important;
+}
+
+[class*="hover:bg-red-600"]:hover {
+  background-color: #dc2626 !important;
+}
+
+[class*="hover:bg-gray-900"]:hover {
+  background-color: #111827 !important;
+}
+
+[class*="hover:bg-gray-800"]:hover {
+  background-color: #1f2937 !important;
+}
+
+[class*="hover:bg-gray-700"]:hover {
+  background-color: #374151 !important;
+}
+
+[class*="hover:text-red-600"]:hover {
+  color: #dc2626 !important;
+}
+
+[class*="hover:text-white"]:hover {
+  color: #ffffff !important;
+}
+
+[class*="hover:scale-105"]:hover {
+  transform: scale(1.05) !important;
+}
+
+[class*="hover:transform"]:hover {
+  transform: scale(1.05) !important;
+}
+
+[class*="hover:brightness-110"]:hover {
+  filter: brightness(1.1) !important;
 }

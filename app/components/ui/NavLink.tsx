@@ -23,7 +23,7 @@ export default function NavLink({ href, children, className = "", onClick }: Nav
     <a
       href={href}
       onClick={handleClick}
-      className={`hover:text-blue-600 transition-colors duration-300 ${className}`}
+      className={`hover:text-red-600 transition-colors duration-300 ${className}`}
     >
       {children}
     </a>

@@ -8,7 +8,7 @@ export default function Card({ children, className = "", hover = true }: CardPro
   const hoverStyles = hover ? "hover:shadow-xl hover:transform hover:scale-105" : "";
 
   return (
-    <div className={`bg-white rounded-xl shadow-lg p-6 transition-all duration-300 ${hoverStyles} ${className}`}>
+    <div className={`bg-[var(--component-background)] rounded-xl shadow-lg p-6 transition-all duration-300 border border-gray-800 ${hoverStyles} ${className}`}>
       {children}
     </div>
   );

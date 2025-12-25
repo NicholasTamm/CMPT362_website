@@ -28,7 +28,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-md'
+          ? 'bg-[var(--component-background)]/95 backdrop-blur-md shadow-md'
           : 'bg-transparent'
       }`}
     >
@@ -36,7 +36,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <NavLink href="#pitch" className="text-xl md:text-2xl font-bold text-gray-900 hover:text-blue-600">
+            <NavLink href="#pitch" className="text-xl md:text-2xl font-bold text-white hover:text-red-600">
               MovieFinder
             </NavLink>
           </div>
@@ -47,7 +47,7 @@ export default function Navigation() {
               <NavLink
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 font-medium hover:text-blue-600"
+                className="text-white font-medium hover:text-red-600"
               >
                 {item.label}
               </NavLink>
@@ -56,7 +56,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
+            className="md:hidden p-2 rounded-md text-white hover:bg-gray-800 focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -86,7 +86,7 @@ export default function Navigation() {
                 <NavLink
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 font-medium hover:text-blue-600 py-2"
+                  className="text-white font-medium hover:text-red-600 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

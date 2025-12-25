@@ -24,7 +24,7 @@ export default function Section({
   return (
     <section id={id} className={sectionClasses}>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-black">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
           {title}
         </h2>
         {children}

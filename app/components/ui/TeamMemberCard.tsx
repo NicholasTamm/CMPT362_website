@@ -22,11 +22,11 @@ export default function TeamMemberCard({
   return (
     <button
       onClick={onClick}
-      className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 h-full flex flex-col cursor-pointer text-left w-full group"
+      className="bg-[var(--component-background)] rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 h-full flex flex-col cursor-pointer text-left w-full group border border-gray-800"
     >
       {/* Profile Photo */}
       <div className="flex justify-center mb-6">
-        <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 group-hover:ring-4 group-hover:ring-blue-300 transition-all">
+        <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-red-400 to-red-600 group-hover:ring-4 group-hover:ring-red-300 transition-all">
           {photo ? (
             <Image
               src={photo}
@@ -44,8 +44,8 @@ export default function TeamMemberCard({
 
       {/* Member Info - Flex grow to push content to bottom */}
       <div className="text-center flex flex-col grow">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
-        <p className="text-blue-600 font-semibold mb-3">{role}</p>
+        <h3 className="text-xl font-bold text-white mb-2">{name}</h3>
+        <p className="text-red-600 font-semibold mb-3">{role}</p>
 
         {/* Social Links - Always pinned to bottom with mt-auto */}
         <div className="flex justify-center gap-4 mt-auto pt-4" onClick={(e) => e.stopPropagation()}>
@@ -54,7 +54,7 @@ export default function TeamMemberCard({
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-400 hover:text-red-600 transition-colors"
               aria-label="GitHub"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function TeamMemberCard({
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-400 hover:text-red-600 transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

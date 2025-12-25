@@ -2,17 +2,17 @@ import { Section, Button } from '../ui';
 
 export default function ApkSection() {
   return (
-    <Section id="apk" title="Download MovieFinder" className="bg-linear-to-b from-blue-50 to-white">
+    <Section id="apk" title="Download MovieFinder" className="bg-[var(--background)]">
       <div className="max-w-4xl mx-auto">
         {/* Introduction */}
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-300 mb-8">
             Get started with MovieFinder today! Download our Android app and begin your movie discovery journey.
           </p>
         </div>
 
         {/* Download Card */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+        <div className="bg-[var(--component-background)] rounded-2xl shadow-xl p-8 md:p-12 mb-12 border border-gray-800">
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Android Icon */}
             <div className="flex-shrink-0">
@@ -25,10 +25,10 @@ export default function ApkSection() {
 
             {/* Download Info */}
             <div className="flex-grow text-center md:text-left">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="text-2xl font-bold text-white mb-3">
                 MovieFinder for Android
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-300 mb-6">
                 Version 1.0 • Latest Release
               </p>
               <Button
@@ -47,35 +47,35 @@ export default function ApkSection() {
         </div>
 
         {/* Installation Instructions */}
-        <div className="bg-blue-50 rounded-xl p-8">
-          <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
+        <div className="bg-[var(--component-background)] rounded-xl p-8 border border-gray-800">
+          <h4 className="text-xl font-bold text-white mb-6 text-center">
             Installation Instructions
           </h4>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h5 className="font-semibold text-gray-900 mb-2">Enable Unknown Sources</h5>
-              <p className="text-sm text-gray-600">
+              <h5 className="font-semibold text-white mb-2">Enable Unknown Sources</h5>
+              <p className="text-sm text-gray-300">
                 Go to Settings → Security → Enable "Install unknown apps"
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h5 className="font-semibold text-gray-900 mb-2">Download & Install</h5>
-              <p className="text-sm text-gray-600">
+              <h5 className="font-semibold text-white mb-2">Download & Install</h5>
+              <p className="text-sm text-gray-300">
                 Click the download button and open the APK file
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h5 className="font-semibold text-gray-900 mb-2">Launch & Enjoy</h5>
-              <p className="text-sm text-gray-600">
+              <h5 className="font-semibold text-white mb-2">Launch & Enjoy</h5>
+              <p className="text-sm text-gray-300">
                 Open MovieFinder and start discovering movies!
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function ApkSection() {
         </div>
 
         {/* Requirements */}
-        <div className="mt-8 text-center text-sm text-gray-500">
+        <div className="mt-8 text-center text-sm text-gray-400">
           <p>Requires Android 8.0 or higher • Size: ~20MB</p>
         </div>
       </div>

@@ -108,9 +108,9 @@ Website Development
   ];
 
   return (
-    <Section id="team" title="Meet the Team" className="bg-white">
+    <Section id="team" title="Meet the Team" className="bg-[var(--background)]">
       <div className="text-center mb-12">
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
           Our talented team of developers working together to bring you the best movie discovery experience.
         </p>
       </div>
@@ -151,7 +151,7 @@ Website Development
 
       {/* Additional Information text */}
       <div className="text-center mt-12">
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Click a team member for project contributions
         </p>
       </div>

@@ -52,13 +52,13 @@ export default function TeamMemberModal({
     >
       {/* Modal Content */}
       <div
-        className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        className="relative bg-[var(--component-background)] rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-gray-800"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors z-10"
+          className="absolute top-4 right-4 text-gray-400 hover:text-red-600 transition-colors z-10"
           aria-label="Close modal"
         >
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function TeamMemberModal({
         <div className="p-8">
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-6">
-            <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 mb-4">
+            <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-red-400 to-red-600 mb-4">
               {photo ? (
                 <Image
                   src={photo}
@@ -84,8 +84,8 @@ export default function TeamMemberModal({
                 </div>
               )}
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">{name}</h2>
-            <p className="text-xl text-blue-600 font-semibold mb-4">{role}</p>
+            <h2 className="text-3xl font-bold text-white mb-2">{name}</h2>
+            <p className="text-xl text-red-600 font-semibold mb-4">{role}</p>
 
             {/* Social Links */}
             {(github || linkedin) && (
@@ -95,7 +95,7 @@ export default function TeamMemberModal({
                     href={github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-gray-400 hover:text-red-600 transition-colors"
                     aria-label="GitHub"
                   >
                     <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function TeamMemberModal({
                     href={linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-gray-400 hover:text-red-600 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -123,18 +123,18 @@ export default function TeamMemberModal({
           {/* Bio Section */}
           {bio && (
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Team Contribution</h3>
-              <p className="text-gray-700 whitespace-pre-line leading-relaxed">{bio}</p>
+              <h3 className="text-lg font-semibold text-white mb-3">Team Contribution</h3>
+              <p className="text-gray-300 whitespace-pre-line leading-relaxed">{bio}</p>
             </div>
           )}
 
           {/* Contributions Section */}
           {contributions && (
-            <div className="bg-blue-50 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+            <div className="bg-[var(--component-background)] rounded-xl p-6 border border-gray-700">
+              <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                 Key Contributions
               </h3>
-              <div className="text-gray-700 whitespace-pre-line leading-relaxed">
+              <div className="text-gray-300 whitespace-pre-line leading-relaxed">
                 {contributions}
               </div>
             </div>
