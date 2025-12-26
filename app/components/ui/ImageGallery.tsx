@@ -26,15 +26,21 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     <div className="max-w-6xl mx-auto">
       {/* Main Image Display */}
       <div className="relative mb-6">
-        <div className="relative aspect-[9/16] max-h-[500px] mx-auto bg-[var(--component-background)] rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
-          <Image
-            src={images[selectedImage].src}
-            alt={images[selectedImage].alt}
-            fill
-            className="object-contain"
-            priority={selectedImage === 0}
-          />
+        {/* layout only */}
+        <div className="relative aspect-[9/16] max-h-[500px] mx-auto">
+          {/* border + clipping (tight around image) */}
+          <div className="relative w-full h-full rounded-2xl overflow-hidden border border-gray-800">
+            <Image
+              src={images[selectedImage].src}
+              alt={images[selectedImage].alt}
+              fill
+              className="object-cover"
+              priority={selectedImage === 0}
+            />
         </div>
+        {/* shadow outside the border */}
+        <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-2xl" />
+      </div>
 
         {/* Navigation Arrows */}
         {images.length > 1 && (
