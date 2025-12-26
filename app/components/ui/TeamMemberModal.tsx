@@ -132,7 +132,7 @@ export default function TeamMemberModal({
           {contributions && (
             <div className="bg-[var(--component-background)] rounded-xl p-6 border border-gray-700">
               <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                Key Contributions
+                In Depth Breakdown:
               </h3>
               <div className="text-gray-300 whitespace-pre-line leading-relaxed">
                 {contributions}
